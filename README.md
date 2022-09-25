@@ -18,6 +18,8 @@ Io scrivo le mie card in YAML. Non vi so aiutare se usate la UI, mai usata e mai
 - TAB IMPOSTAZIONI
 <img width="408" alt="Schermata 2022-09-25 alle 15 46 18" src="https://user-images.githubusercontent.com/48358142/192149018-765a5bf2-3819-4333-8ebf-bc28bfa0899f.png">
 
+- GESTIONE TIPI DI ALLARME
+<img width="525" alt="Schermata 2022-09-19 alle 01 33 09" src="https://user-images.githubusercontent.com/48358142/192150883-7a4aa6a0-fda0-4546-8b74-d2d14db5e1ba.png">
 
 
 # Tutto realizzato con una solo button custom card.
@@ -36,6 +38,8 @@ Tab HOME
 - 3 tasti per abilitirare o meno l'inserimento automatico dell'allame notte, fuori casa e in casa
 - Tasto per abilitare il simulatore di presenza
 - Indicatore dello stato della modalità ospite + indicatore del numero di ospiti prendenti in casa
+- Tenendo premuto lo scudetto si apre un popup con il quale è possibile abilitare i vari tipi di allarme
+- Ai lati dello scudetto centrale le due icone servon ad aprire la porta (se la serratura è aperta e a spegnere la sirena se sta suondando)
 
 Tab IMPOSTAZIONI
 
