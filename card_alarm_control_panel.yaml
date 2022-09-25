@@ -904,19 +904,10 @@ custom_fields:
 
         - value: "In Casa"
           color: Gold
-          styles:
-            card:
-              - animation: blink 2s ease infinite
         - value: "Attivo"
           color: red
-          styles:
-            card:
-              - animation: blink 300ms 5 ease
         - value: "Notte"
           color: dodgerblue
-          styles:
-            card:
-              - animation: blink 2s ease infinite
       tap_action:
         action: fire-dom-event
         browser_mod:
