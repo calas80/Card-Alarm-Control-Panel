@@ -1,5 +1,11 @@
 # Card Alarm Control Panel
 
+
+# PER PIACERE NON MI CHIEDETE AIUTI SU COME FAR FUNZIONARE LE CARD SE USATE LA UI. 
+Io scrivo le mie card in YAML. Non vi so aiutare se usate la UI, mai usata e mai la userò  ^_- 
+
+
+
 * SCHERMATA PRINCIPALE
 <img width="403" alt="Schermata 2022-09-24 alle 11 15 05" src="https://user-images.githubusercontent.com/48358142/192149035-a781597d-cb8f-4428-9dc7-17639bfcb3cb.png">
 
@@ -42,8 +48,3 @@ Tab IMPOSTAZIONI
 - Chiudi la serratura se l'allarme è inserito
 - Spegni luci se l'allarme è attivo
 
-
-
-
-# PER PIACERE NON MI CHIEDETE AIUTI SU COME FAR FUNZIONARE LE CARD SE USATE LA UI. 
-Io scrivo le mie card in YAML. Non vi so aiutare se usate la UI, mai usata e mai la userò  ^_- 
