@@ -30,7 +30,7 @@ Caratteristiche:
 
 Tab HOME
 - Indicatore della zona della persona
-- Insicatore del livello di batteria
+- Indicatore del livello di batteria
 - indicatore dello stato di carica
 - Indicatore del numero di finestre aperte
 - indicatore del numero di inferriate aperte
