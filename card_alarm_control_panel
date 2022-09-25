@@ -1,0 +1,1187 @@
+type: custom:button-card
+styles:
+  card:
+    - height: 310px
+  name:
+    - align-self: start
+    - font-size: 120%
+    - color: var(--secondary-text-color)
+  custom_fields:
+    box1:
+      - position: absolute
+      - left: 5%
+      - top: 15px
+    avatar_1:
+      - position: absolute
+      - left: 5%
+      - top: 15px
+    avatar_1_nome:
+      - position: absolute
+      - left: 18%
+      - top: 20px
+    power_1:
+      - position: absolute
+      - left: 35.5%
+      - top: 2px
+      - display: |
+          [[[
+            if (states['sensor.francesco_battery_state'].state == 'Charging')
+              return "block";
+            return "none";
+          ]]]
+    batteria_1:
+      - position: absolute
+      - left: 35%
+      - top: 16px
+      - height: 45px
+      - width: 45px
+      - font-size: 18px
+      - font-weight: bold
+      - line-height: 45px
+      - border-radius: 50%
+      - color: '#1a1a1a'
+      - background: GhostWhite
+      - opacity: 0.9
+      - border: 4px solid
+      - border-color: |
+          [[[
+            if (states['sensor.francesco_battery_state'].state == 'Charging')
+              return "Chocolate"
+            return "GhostWhite"
+          ]]]
+    avatar_1_posizione:
+      - position: absolute
+      - left: 20%
+      - top: 45px
+
+    box2:
+      - position: absolute
+      - left: 54%
+      - top: 15px
+    avatar_2:
+      - position: absolute
+      - left: 83.5%
+      - top: 15px
+    avatar_2_nome:
+      - position: absolute
+      - left: 69%
+      - top: 20px
+    batteria_2:
+      - position: absolute
+      - left: 54.5%
+      - top: 16px
+      - height: 45px
+      - width: 45px
+      - font-size: 18px
+      - font-weight: bold
+      - line-height: 45px
+      - border-radius: 50%
+      - color: '#1a1a1a'
+      - background: GhostWhite
+      - opacity: 0.9
+      - border: 4px solid
+      - border-color: |
+          [[[
+            if (states['sensor.iphone_battery_state'].state == 'Charging')
+              return "Chocolate"
+            return "GhostWhite"
+          ]]]
+    power_2:
+      - position: absolute
+      - left: 55%
+      - top: 2px
+      - display: |
+          [[[
+            if (states['sensor.iphone_battery_state'].state == 'Charging')
+              return "block";
+            return "none";
+          ]]]
+    avatar_2_posizione:
+      - position: absolute
+      - left: 70%
+      - top: 45px
+
+    box_finestre:
+      - position: absolute
+      - left: 4%
+      - top: 125px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    box_inferriate:
+      - position: absolute
+      - left: 62%
+      - top: 125px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    tab_1:
+      - position: absolute
+      - left: 12.5%
+      - top: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "25%"
+            return "27%"
+          ]]]
+    tab_2:
+      - position: absolute
+      - left: 37%
+      - top: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "25%"
+            return "27%"
+          ]]]
+    tab_3:
+      - position: absolute
+      - left: 61.5%
+      - top: |
+          [[[
+            if (states['input_boolean.allarme_tab_3'].state == 'on')
+              return "25%"
+            return "27%"
+          ]]]
+
+########################## TAB 1 IMPOSTAZIONI
+    batteria_scarica:
+      - position: absolute
+      - left: 30px
+      - top: 145px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    batteria_scarica_name:
+      - position: absolute
+      - left: 65px
+      - top: 145px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    foto:
+      - position: absolute
+      - left: 30px
+      - top: 185px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    foto_name:
+      - position: absolute
+      - left: 65px
+      - top: 185px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    telefonata:
+      - position: absolute
+      - left: 30px
+      - top: 225px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    telefonata_name:
+      - position: absolute
+      - left: 65px
+      - top: 225px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    trigger_serratura:
+      - position: absolute
+      - left: 30px
+      - top: 265px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    trigger_serratura_name:
+      - position: absolute
+      - left: 65px
+      - top: 265px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    valutazione_tasti:
+      - position: absolute
+      - left: 423px
+      - top: 185px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    valutazione_tasti_name:
+      - position: absolute
+      - left: 265px
+      - top: 185px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    chiusura_porta:
+      - position: absolute
+      - left: 423px
+      - top: 225px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    chiusura_porta_name:
+      - position: absolute
+      - left: 265px
+      - top: 225px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    spegnimento_luci:
+      - position: absolute
+      - left: 423px
+      - top: 265px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    spegnimento_luci_name:
+      - position: absolute
+      - left: 265px
+      - top: 265px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    rientro_familiare:
+      - position: absolute
+      - left: 423px
+      - top: 145px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    rientro_familiare_name:
+      - position: absolute
+      - left: 265px
+      - top: 145px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_1'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+########################## TAB 2 HOME
+    alarm_button:
+      - position: absolute
+      - left: 38%
+      - top: 135px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    apri_porta:
+      - position: absolute
+      - left: 152px
+      - top: 185px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    spegni_allarme:
+      - position: absolute
+      - left: 57%
+      - top: 185px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    serratura:
+      - position: absolute
+      - left: 2%
+      - top: 235px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    auto_notte:
+      - position: absolute
+      - left: 38%
+      - top: 270px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    auto_in_casa:
+      - position: absolute
+      - left: 45.5%
+      - top: 270px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    auto_away:
+      - position: absolute
+      - left: 53%
+      - top: 270px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+    ospite:
+      - position: absolute
+      - left: 84%
+      - top: 235px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+    simulatore_presenza:
+      - position: absolute
+      - left: 75%
+      - top: 260px
+      - display: |
+          [[[
+            if (states['input_boolean.allarme_tab_2'].state == 'on')
+              return "block";
+            return "none";
+          ]]]
+
+########################## TAB 3
+
+
+
+############################################## custom_fields
+custom_fields:
+  box1:
+    card:
+      type: 'custom:button-card'
+      template: no_background
+      styles:
+        card:
+          - height: 55px
+          - width: 200px
+          - border-radius: 25px
+          - box-shadow: '-5px -5px 4px #373737, 5px 5px 5px black'
+  avatar_1: |
+    [[[
+    if (states['person.francesco'].state == "home")
+      return `<img style="width: 55px" src="/local/avatar/francesco.png"/>`
+    else
+      return `<img style="width: 55px" src="/local/avatar/francesco_off.png"/>`
+    ]]]
+  avatar_1_nome:
+    card:
+      type: 'custom:button-card'
+      template: no_background
+      name: Francesco
+  power_1:
+    card:
+      type: "custom:button-card"
+      icon: mdi:flash
+      show_name: false
+      color: Chocolate
+      template: no_background
+      styles:
+        card:
+          - height: 50px
+          - width: 50px
+  batteria_1: >
+    [[[ return states['device_tracker.iphone_12'].attributes.battery_level+ '%'; ]]]
+  avatar_1_posizione:
+    card:
+      type: 'custom:button-card'
+      template: no_background
+      name: >
+        [[[
+          if (states['person.francesco'].state == 'home')
+            return "Casa"
+          if (states['person.francesco'].state == 'not_home')
+            return "Fuori"
+          return states['person.francesco'].state;
+        ]]]
+      styles:
+        name:
+          - color: Chocolate
+
+  box2:
+    card:
+      type: 'custom:button-card'
+      template: no_background
+      styles:
+        card:
+          - height: 55px
+          - width: 200px
+          - border-radius: 25px
+          - box-shadow: '-5px -5px 4px #373737, 5px 5px 5px black'
+  avatar_2: |
+    [[[
+    if (states['person.simona'].state == "home")
+      return `<img style="width: 55px" src="/local/avatar/simona.png"/>`
+    else
+      return `<img style="width: 55px" src="/local/avatar/simona_off.png"/>`
+    ]]]
+  avatar_2_nome:
+    card:
+      type: 'custom:button-card'
+      template: no_background
+      name: Simona
+  batteria_2: >
+    [[[ return states['device_tracker.iphone'].attributes.battery_level+ '%'; ]]]
+  power_2:
+    card:
+      type: "custom:button-card"
+      icon: mdi:flash
+      show_name: false
+      color: Chocolate
+      template: no_background
+      styles:
+        card:
+          - height: 50px
+          - width: 50px
+  avatar_2_posizione:
+    card:
+      type: 'custom:button-card'
+      template: no_background
+      name: >
+        [[[
+          if (states['person.simona'].state == 'home')
+            return "Casa"
+          if (states['person.simona'].state == 'not_home')
+            return "Fuori"
+          return states['person.simona'].state;
+        ]]]
+      styles:
+        name:
+          - color: Chocolate
+  box_finestre:
+    card:
+      type: 'custom:button-card'
+      template: no_background
+      name:  >
+        [[[
+          return 'Finestre aperte: ' + states['sensor.finestre_aperte'].state;
+        ]]]
+      show_name: true
+      styles:
+        card:
+          - box-shadow: 'inset -2px -2px 3px #313131, inset 3px 3px 3px black'
+      style:
+        .: |
+         ha-card {
+           margin: 0px 30px 0px 0px;
+         }
+  box_inferriate:
+    card:
+      type: 'custom:button-card'
+      template: no_background
+      name:  >
+        [[[
+          return 'Inferriate aperte: ' + states['sensor.inferriate_aperte'].state;
+        ]]]
+      show_name: true
+      styles:
+        card:
+          - box-shadow: 'inset -2px -2px 3px #313131, inset 3px 3px 3px black'
+      style:
+        .: |
+         ha-card {
+           margin: 0px 30px 0px 0px;
+         }
+
+  tab_1:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_tab_1
+      template: border-box
+      variables:
+        margin-bottom: 15
+        margin-top: 15
+      show_name: true
+      show_icon: false
+      name: Impostazioni
+      state:
+        - value: 'on'
+          styles:
+            card:
+              - box-shadow: 'inset -2px -2px 6px GhostWhite, inset 3px 3px 3px DimGrey'
+      styles:
+        card:
+          - width: 120px
+          - height: |
+              [[[
+                if (states['input_boolean.allarme_tab_1'].state == 'on')
+                  return "42px"
+                return "30px"
+              ]]]
+          - border-radius:  |
+              [[[
+                if (states['input_boolean.allarme_tab_1'].state == 'on')
+                  return "15%"
+                return "3%"
+              ]]]
+          - background: |
+              [[[
+                if (states['input_boolean.allarme_tab_1'].state == 'on')
+                  return "white"
+                return ""
+              ]]]
+          - padding: 15px 15px
+        name:
+          - color: |
+              [[[
+                if (states['input_boolean.allarme_tab_1'].state == 'on')
+                  return "DimGray"
+                return "white"
+              ]]]
+          - font-size: 14px
+  tab_2:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_tab_2
+      template: border-box
+      variables:
+        margin-bottom: 15
+        margin-top: 15
+      show_name: true
+      show_icon: false
+      name: Home
+      state:
+        - value: 'on'
+          styles:
+            card:
+              - box-shadow: 'inset -2px -2px 6px GhostWhite, inset 3px 3px 3px DimGrey'
+      styles:
+        card:
+          - width: 120px
+          - height: |
+              [[[
+                if (states['input_boolean.allarme_tab_2'].state == 'on')
+                  return "42px"
+                return "30px"
+              ]]]
+          - border-radius: |
+              [[[
+                if (states['input_boolean.allarme_tab_2'].state == 'on')
+                  return "15%"
+                return "0%"
+              ]]]
+          - background: |
+              [[[
+                if (states['input_boolean.allarme_tab_2'].state == 'on')
+                  return "white"
+                return ""
+              ]]]
+          - padding: 15px 15px
+        name:
+          - color: |
+              [[[
+                if (states['input_boolean.allarme_tab_2'].state == 'on')
+                  return "DimGray"
+                return "white"
+              ]]]
+          - font-size: 14px
+  tab_3:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_tab_3
+      template: border-box
+      variables:
+        margin-bottom: 15
+        margin-top: 15
+      show_name: true
+      show_icon: false
+      name: Sensori
+      state:
+        - value: 'on'
+          styles:
+            card:
+              - box-shadow: 'inset -2px -2px 6px GhostWhite, inset 3px 3px 3px DimGrey'
+      styles:
+        card:
+          - width: 120px
+          - height: |
+              [[[
+                if (states['input_boolean.allarme_tab_3'].state == 'on')
+                  return "42px"
+                return "30px"
+              ]]]
+          - border-radius: |
+              [[[
+                if (states['input_boolean.allarme_tab_3'].state == 'on')
+                  return "15%"
+                return "3%"
+              ]]]
+          - background: |
+              [[[
+                if (states['input_boolean.allarme_tab_3'].state == 'on')
+                  return "white"
+                return ""
+              ]]]
+          - padding: 15px 15px
+        name:
+          - color: |
+              [[[
+                if (states['input_boolean.allarme_tab_3'].state == 'on')
+                  return "DimGray"
+                return "white"
+              ]]]
+          - font-size: 14px
+
+########################## TAB 1 IMPOSTAZIONI
+  batteria_scarica:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.richiesta_disattivazione_allarme_batteria_scarica
+      show_name: false
+      size: 70%
+      template: botton_allarme_sx
+      icon: mdi:cellphone-remove
+  batteria_scarica_name:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.richiesta_disattivazione_allarme_batteria_scarica
+      name: Controllo batteria
+      template: botton_allarme_txt_sx
+      show_icon: false
+
+  foto:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_invio_foto
+      show_name: false
+      size: 70%
+      template: botton_allarme_sx
+  foto_name:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_invio_foto
+      name: Invio foto
+      template: botton_allarme_txt_sx
+      show_icon: false
+
+  telefonata:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_telefonata
+      tooltip: Invio chiamata con allarme
+      show_name: false
+      size: 70%
+      template: botton_allarme_sx
+  telefonata_name:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_telefonata
+      name: Telefonata
+      template: botton_allarme_txt_sx
+      show_icon: false
+      state:
+        - value: 'on'
+          icon: 'mdi:account-star'
+          color: Chocolate
+          styles:
+            card:
+              - box-shadow: 'inset -2px -2px 3px #313131, inset 3px 3px 3px black'
+
+  trigger_serratura:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_trigger_serratura
+      show_name: false
+      size: 70%
+      template: botton_allarme_sx
+  trigger_serratura_name:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_trigger_serratura
+      name: Alert Locker
+      template: botton_allarme_txt_sx
+      show_icon: false
+
+  rientro_familiare:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.disattivazione_preventiva_rietro_familiare
+      show_name: false
+      size: 70%
+      template: botton_allarme_dx
+  rientro_familiare_name:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.disattivazione_preventiva_rietro_familiare
+      name: Rientro familiare
+      template: botton_allarme_txt_dx
+      show_icon: false
+
+  valutazione_tasti:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.valutazione_tasti_luci
+      show_name: false
+      size: 70%
+      template: botton_allarme_dx
+  valutazione_tasti_name:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.valutazione_tasti_luci
+      name: Alert Tasti
+      template: botton_allarme_txt_dx
+      show_icon: false
+
+  chiusura_porta:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.chiusura_automatica_porta
+      show_name: false
+      size: 70%
+      template: botton_allarme_dx
+  chiusura_porta_name:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.chiusura_automatica_porta
+      name: Chiudi Porta
+      template: botton_allarme_txt_dx
+      show_icon: false
+
+  spegnimento_luci:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.spegni_luci_con_allarme
+      show_name: false
+      size: 70%
+      template: botton_allarme_dx
+  spegnimento_luci_name:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.spegni_luci_con_allarme
+      name: Spegni Luci
+      template: botton_allarme_txt_dx
+      show_icon: false
+
+########################## TAB 2 HOME
+
+  apri_porta:
+    card:
+      type: "custom:button-card"
+      icon: mdi:key-arrow-right
+      show_name: false
+      size: 70%
+      template: no_background
+      hold_action:
+        action: call-service
+        service: lock.unlock
+        service_data:
+          entity_id: lock.danalock
+      styles:
+        icon:
+          - color: Chocolate
+          - height: 46px
+          - width: 40px
+          - padding-left: 5px
+          - padding-right: 10px
+          - padding-left: 8px
+          - padding-top: 1px
+          - padding-bottom: 1px
+        card:
+          - border-top-right-radius: 0%
+          - border-bottom-right-radius: 0%
+          - border-bottom-left-radius: 20%
+          - border-top-left-radius: 20%
+          - box-shadow: '-5px -5px 6px #373737, 5px 5px 10px black'
+  spegni_allarme:
+    card:
+      type: "custom:button-card"
+      icon: mdi:alarm-light-off-outline
+      tooltip: Spegni Allarme
+      show_name: false
+      size: 70%
+      template: no_background
+      hold_action:
+        action: call-service
+        service: script.turn_on
+        service_data:
+          entity_id: scritp.sirene_off
+      styles:
+        icon:
+          - color: Chocolate
+          - height: 46px
+          - width: 40px
+          - padding-left: 10px
+          - padding-right: 8px
+          - padding-top: 1px
+          - padding-bottom: 1px
+        card:
+          - border-top-right-radius: 20%
+          - border-bottom-right-radius: 20%
+          - border-bottom-left-radius: 0%
+          - border-top-left-radius: 0%
+          - box-shadow: '-5px -5px 6px #373737, 5px 5px 10px black'
+  alarm_button:
+    card:
+      type: "custom:button-card" # Allarme disattivato
+      entity: sensor.allarme
+      name: "[[[ return states['sensor.allarme'].state]]]"
+      size: 100%
+      color: auto
+      color_type: icon
+      show_name: false
+      template: no_background
+      styles:
+        card:
+          - height: 150px
+          - width: 110px
+        name:
+          - font-size: 90%
+      state:
+        - value: "Disattivato"
+          color: OliveDrab
+
+        - value: "In Casa"
+          color: Gold
+          styles:
+            card:
+              - animation: blink 2s ease infinite
+        - value: "Attivo"
+          color: red
+          styles:
+            card:
+              - animation: blink 300ms 5 ease
+        - value: "Notte"
+          color: dodgerblue
+          styles:
+            card:
+              - animation: blink 2s ease infinite
+      tap_action:
+        action: fire-dom-event
+        browser_mod:
+          service: browser_mod.popup
+          data:
+            title: "Pannallo allarmi"
+            large: true
+            card_mod:
+              style:
+                .: |
+                  :host {
+                    --ha-card-background: rgba(0,0,0,0.9);
+                    --mdc-dialog-scrim-color: rgba(0,0,0,0.8);
+                    --mdc-dialog-min-height: 20%;
+                  }
+            content:
+              type: horizontal-stack
+              cards:
+                - type: "custom:button-card" # Allarme disattivato
+                  entity: binary_sensor.allarme_disattivato
+                  icon: mdi:shield-off-outline
+                  name: Disattivato
+                  color: auto
+                  color_type: icon
+                  tap_action:
+                    action: none
+                  hold_action:
+                    action: call-service
+                    service: alarm_control_panel.alarm_disarm
+                    service_data:
+                      entity_id: alarm_control_panel.allarme
+                      code: "XXXX"
+                  state:
+                    - value: "on"
+                      color: DarkGreen
+
+                - type: "custom:button-card" # Allarme in casa
+                  entity: binary_sensor.allarme_in_casa
+                  icon: mdi:shield-home-outline
+                  name: In Casa
+                  color: auto
+                  color_type: icon
+                  tap_action:
+                    action: none
+                  hold_action:
+                    action: call-service
+                    service: alarm_control_panel.alarm_arm_home
+                    service_data:
+                      entity_id: alarm_control_panel.allarme
+                      code: "XXXX"
+                  state:
+                    - value: "on"
+                      color: Gold
+                      styles:
+                        card:
+                          - animation: blink 2s ease infinite
+
+                - type: "custom:button-card" # Allarme away
+                  entity: binary_sensor.allarme_away
+                  icon: mdi:shield-check-outline
+                  name: Fuori Casa
+                  color: auto
+                  color_type: icon
+                  tap_action:
+                    action: none
+                  hold_action:
+                    action: call-service
+                    service: alarm_control_panel.alarm_arm_away
+                    service_data:
+                      entity_id: alarm_control_panel.allarme
+                      code: "XXXX"
+                  state:
+                    - value: "on"
+                      color: red
+                      styles:
+                        card:
+                          - animation: blink 2s ease infinite
+
+                - type: "custom:button-card" # Allarme notte
+                  entity: binary_sensor.allarme_notte
+                  icon: mdi:shield-moon-outline
+                  name: Notte
+                  color: auto
+                  color_type: icon
+                  tap_action:
+                    action: none
+                  hold_action:
+                    action: call-service
+                    service: alarm_control_panel.alarm_arm_night
+                    service_data:
+                      entity_id: alarm_control_panel.allarme
+                      code: "XXXX"
+                  state:
+                    - value: "on"
+                      color: dodgerblue
+                      styles:
+                        card:
+                          - animation: blink 2s ease infinite
+
+  serratura:
+    card:
+      type: "custom:button-card"
+      entity: lock.danalock
+      show_name: false
+      size: 60%
+      state:
+        - value: unlocked
+          icon: 'mdi:lock-open-check-outline'
+          color: OliveDrab
+        - value: locked
+          icon: 'mdi:lock-outline'
+          color: FireBrick
+      styles:
+        card:
+          - height: 60px
+          - width: 60px
+          - border-radius: 30%
+      style: |
+        ha-card {
+          box-shadow: -5px -5px 15px #2c2c2c, 5px 5px 15px black;
+        }
+      hold_action:
+        action: call-service
+        service: |
+          [[[
+            if (states['lock.danalock'].state === "locked")
+              return "lock.unlock"
+            return "lock.lock"
+          ]]]
+        service_data:
+          entity_id: lock.danalock
+  auto_notte:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_automatico_notte
+      show_name: false
+      icon: mdi:shield-moon-outline
+      size: 70%
+      state:
+        - value: 'on'
+          color: Chocolate
+          styles:
+            card:
+              - box-shadow: 'inset -2px -2px 3px #313131, inset 3px 3px 3px black'
+      styles:
+        card:
+          - height: 35px
+          - width: 35px
+          - border-radius: 30%
+  auto_in_casa:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_automatico_in_casa
+      show_name: false
+      icon: mdi:shield-home-outline
+      size: 70%
+      state:
+        - value: 'on'
+          color: Chocolate
+          styles:
+            card:
+              - box-shadow: 'inset -2px -2px 3px #313131, inset 3px 3px 3px black'
+      styles:
+        card:
+          - height: 35px
+          - width: 35px
+          - border-radius: 30%
+  auto_away:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.allarme_automatico_away
+      show_name: false
+      icon: mdi:shield-check-outline
+      size: 70%
+      state:
+        - value: 'on'
+          color: Chocolate
+          styles:
+            card:
+              - box-shadow: 'inset -2px -2px 3px #313131, inset 3px 3px 3px black'
+      styles:
+        card:
+          - height: 35px
+          - width: 35px
+          - border-radius: 30%
+
+  simulatore_presenza:
+    card:
+      type: "custom:button-card"
+      entity: switch.presence_simulation
+      show_name: false
+      icon: mdi:account-group
+      size: 60%
+      styles:
+        card:
+          - height: 38px
+          - width: 42px
+          - border-radius: 30%
+      style: |
+        ha-card {
+          box-shadow: -5px -5px 15px #2c2c2c, 5px 5px 15px #191919;
+        }
+  ospite:
+    card:
+      type: "custom:button-card"
+      entity: input_boolean.modo_ospite
+      tooltip: modalità ospite
+      show_name: false
+      size: 55%
+      state:
+        - value: 'on'
+          icon: 'mdi:account-star'
+          color: Chocolate
+          styles:
+            card:
+              - box-shadow: 'inset -2px -2px 3px #313131, inset 3px 3px 3px black'
+      styles:
+        card:
+          - height: 60px
+          - width: 60px
+          - border-top-right-radius: 30%
+          - border-bottom-right-radius: 30%
+          - border-bottom-left-radius: 30%
+          - border-top-left-radius: 30%
+        icon:
+          - padding-top: 5px
+        grid:
+          - position: relative
+        custom_fields:
+          notification:
+            - border-radius: 50%
+            - position: absolute
+            - left: 10%
+            - top: 1%
+            - height: 18px
+            - width: 18px
+            - font-size: 14px
+            - line-height: 20px
+      custom_fields:
+        notification: >
+          [[[ return (states['sensor.ospiti_count'].state) ]]]
+      style: |
+        ha-card {
+          box-shadow: -5px -5px 15px #2c2c2c, 5px 5px 15px black;;
+        }
+
+########################## TAB 3
+
+style:
+  .: |
+    ha-card {
+      —mdc-theme-primary: with;
+      border: {% if is_state('sensor.allarme', 'Disattivato') %} 0px solid
+              {% elif is_state('sensor.allarme', 'In Casa') %} 1px solid
+              {% elif is_state('sensor.allarme', 'Attivo') %} 1px solid
+              {% elif is_state('sensor.allarme', 'Notte') %} 1px solid
+              {% else %} 0px solid
+              {% endif %};
+
+      border-color: {% if is_state('sensor.allarme', 'Disattivato') %}
+                    {% elif is_state('sensor.allarme', 'In Casa') %} With
+                    {% elif is_state('sensor.allarme', 'Attivo') %} OrangeRed
+                    {% elif is_state('sensor.allarme', 'Notte') %} RoyalBlue
+                    {% else %}
+                    {% endif %};
+    }
+      background-color: var(--ha-card-background);
+      box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.6);
