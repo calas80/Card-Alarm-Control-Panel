@@ -23,8 +23,11 @@ Io scrivo le mie card in YAML. Non vi so aiutare se usate la UI, mai usata e mai
 
 
 # Tutto realizzato con una solo button custom card.
+https://github.com/custom-cards/button-card
 
 Per l'installazione dovete copiare il file principale + il contenuto del file template.
+Come usare il file template di custom button card è spiegato nella sua documentazione. Essenzialmente dovete creare un file template.yaml e poi dovete aggiungere una riga simile - button_card_templates: !include template.yaml - al vostro ui-lovelace.yaml (scrivo simile perchè il percorso può cambiare in base a dove decidete di creare il file template.yaml
+https://github.com/custom-cards/button-card#configuration-templates
 
 Caratteristiche:
 
