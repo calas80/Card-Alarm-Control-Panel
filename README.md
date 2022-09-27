@@ -15,6 +15,8 @@ Io scrivo le mie card in YAML. Non vi so aiutare se usate la UI, mai usata e mai
 - INDICATORE DI STATO DI CARICA
 <img width="408" alt="Schermata 2022-09-25 alle 00 43 15" src="https://user-images.githubusercontent.com/48358142/192149009-c46d9292-b8e9-48d7-9d8e-5365280aa9e1.png">
 
+<img width="400" alt="Schermata 2022-09-25 alle 17 18 13" src="https://user-images.githubusercontent.com/48358142/192542069-237dd193-c310-4b0a-93f7-f9253cf47322.jpeg">
+
 - TAB IMPOSTAZIONI
 <img width="408" alt="Schermata 2022-09-25 alle 15 46 18" src="https://user-images.githubusercontent.com/48358142/192149018-765a5bf2-3819-4333-8ebf-bc28bfa0899f.png">
 
@@ -22,7 +24,6 @@ Io scrivo le mie card in YAML. Non vi so aiutare se usate la UI, mai usata e mai
 <img width="806" alt="Schermata 2022-09-25 alle 17 18 13" src="https://user-images.githubusercontent.com/48358142/192151290-d8f87640-7a6e-4aad-938c-a08e123e42a8.png">
 
 
-<img width="400" alt="Schermata 2022-09-25 alle 17 18 13" src="https://user-images.githubusercontent.com/48358142/192542069-237dd193-c310-4b0a-93f7-f9253cf47322.jpeg">
 
 
 
