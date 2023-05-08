@@ -29,6 +29,7 @@ styles:
               return "block";
             return "none";
           ]]]
+          
     batteria_1:
       - position: absolute
       - left: 35%
